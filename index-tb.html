@@ -1,8 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- -----META TAGS----- -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="ISA CONSTRUCTORA">
+    <meta property="og:site_name" content="ISA CONSTRUCTORA">
+    <meta name=”robots” content="index, follow">
+    <meta property="og:description" content="Concretamos sueños, edificamos hogares">
+    <meta property="og:image" content="https://rozzidigital.com/logo-icon-large.png">
+    <meta property="og:url" content="http://isaconstructora.com">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta name="theme-color" content="#f49445">
+    <meta name="description" content="Concretamos sueños, edificamos hogares">
+
+            <!-- -----FAVICONS----- -->
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./images/logo-icon-large.png" type="image/x-icon">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#023440">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+
+
+
     <title>ISA CONSTRUCTORA - Concretamos sueños, edificamos hogares</title>
 
             <!-- -----CSS----- -->
@@ -10,22 +34,27 @@
     <link rel="stylesheet" href="tailwind.min.css">
             <!-- -----FONTS----- -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+            <!-- -----FONTAWESOME KIT----- -->
+    <script src="https://kit.fontawesome.com/6178921733.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- -----NAVBAR Y HEADER----- -->
     <header class="text-gray-700 body-font ">
-        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <a class="mx-2 hover:text-gray-900" href="#nosotros">Nosotros</a>
-            <a class="mx-2 hover:text-gray-900" href="./desarrollos-tb.html">Desarrollos</a>
-            <a class="mx-2 hover:text-gray-900" href="#proyectos">Proyectos</a>
-            <a class="mx-2 hover:text-gray-900" href="#contacto">Contacto</a>
+        <div class="container md:mx-auto flex flex-wrap sm:pr-8 md:p-3 flex-col md:flex-row items-center">
+        <nav id="myTopnav" class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto topnav">
+            <a class="mx-2 hover:text-gray-900 nav-link" href="#nosotros">Nosotros</a>
+            <a class="mx-2 hover:text-gray-900 nav-link" href="./desarrollos-tb.html">Desarrollos</a>
+            <a class="mx-2 hover:text-gray-900 nav-link" href="#proyectos">Proyectos</a>
+            <a class="mx-2 hover:text-gray-900 nav-link" href="#contacto">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
         </nav>
-        <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0" href="#">
-            <img src="./assets/isa-logopng.png" alt="logo" style="height: 40px;">
+        <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-2 md:mb-0" href="#">
+            <img class="logo" src="./assets/isa-logopng.png" alt="logo" style="height: 40px;">
         </a>
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">VENTAS
+            <button class="inline-flex items-center bg-orange-200 border-0 py-1 px-3 focus:outline-none hover:bg-orange-300 rounded text-base mb-1 mt-4 md:mt-0">VENTAS
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -38,15 +67,46 @@
 <section class="text-gray-700 body-font showcase">
     <!--<img src="./ISA-assets/ISA/Obras_Particulares/showcase.jpg" alt="showcase-img" class="absolute">-->
     <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 z-10 relative showcase-text border-text">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-8 lg:pr-0 pr-0 z-10 relative showcase-text border-text">
         <h1 class=" text-gray-100">ISA CONSTRUCTORA</h1>
-        <p class="leading-relaxed text-gray-100 mt-4">Concretamos sueños, <span class="highlight"> edificamos hogares.</span></p>
+        <p class="leading-relaxed  mt-4">Concretamos sueños,<span class="highlight"> edificamos hogares.</span></p>
       </div>
       <div class="lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 z-10">
         <button class="text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Nuestros trabajos</button>
       </div>
     </div>
   </section>
+
+<!-- SOCIAL NAVBAR-->
+    <nav class="bottom-navbar">
+        <div class="whatsapp">
+            <a href="http://wa.me/5491167654034" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><defs><linearGradient x1="86" y1="14.10938" x2="86" y2="158.11638" gradientUnits="userSpaceOnUse" id="color-1_43677_gr1"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient><linearGradient x1="86.81969" y1="47.03125" x2="86.81969" y2="125.04131" gradientUnits="userSpaceOnUse" id="color-2_43677_gr2"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient></defs><g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none" fill-rule="nonzero"></path><g><path d="M17.19731,155.06606l10.191,-37.21381c-5.57925,-10.05125 -8.51937,-21.43281 -8.514,-32.981c0.01344,-37.46106 30.50313,-67.93731 67.96419,-67.93731c18.17288,0.00806 35.24656,7.08425 48.07669,19.92513c12.83013,12.84087 19.89288,29.96831 19.8875,48.2245c-0.01612,37.55513 -30.50581,68.10394 -67.96419,68.10394c-10.8145,0 -21.69619,-2.73856 -31.562,-7.92812zM55.97525,139.52963l0.92988,0.50525c9.32831,5.08744 19.66712,7.77763 29.9065,7.77763c34.52362,0 62.59994,-28.14081 62.61606,-62.72894c0.00538,-16.82375 -6.49837,-32.59938 -18.31262,-44.42438c-11.81425,-11.825 -27.54419,-18.34219 -44.27656,-18.35025c-34.49675,0 -62.57306,28.06556 -62.5865,62.56231c-0.00538,10.98919 2.881,21.80369 8.35006,31.27981l0.56169,0.97019l-8.33394,30.42788zM86.8385,142.4375c-9.90613,0 -19.92781,-2.84875 -29.00619,-8.23181l-1.17444,-0.85462l-23.79512,6.24306l6.40163,-23.35706l-0.65575,-1.04006c-5.70556,-9.073 -8.71556,-19.54081 -8.71019,-30.28544c0.01075,-31.36313 25.56619,-56.88094 56.96156,-56.88094c15.16288,0.00538 29.45769,5.96088 40.25606,16.76731c10.75,10.75806 16.66788,25.11469 16.6625,40.41731c-0.01075,31.55125 -25.55544,57.22225 -56.94006,57.22225zM60.69181,129.65038c8.21837,4.85094 17.24838,7.41213 26.12519,7.41213c28.4445,0 51.57581,-23.25762 51.58656,-51.84725c0.00538,-13.87019 -5.3535,-26.875 -15.08762,-36.61719c-9.78788,-9.79325 -22.73356,-15.18706 -36.45594,-15.19244c-28.43644,0 -51.57581,23.10712 -51.58656,51.50862c-0.00538,9.72606 2.71975,19.20488 7.88244,27.41519l1.92156,3.03956l-4.56338,16.65981l17.27794,-4.53381z" fill="url(#color-1_43677_gr1)" fill-rule="nonzero"></path><path d="M70.1975,57.02606c-1.247,-2.77081 -2.5585,-2.82725 -3.74638,-2.87562c-0.97019,-0.04031 -2.08012,-0.04031 -3.19006,-0.04031c-1.10994,0 -2.91325,0.41656 -4.43706,2.08281c-1.5265,1.66625 -5.8265,5.69212 -5.8265,13.87825c0,8.18881 5.96356,16.10081 6.79669,17.21344c0.83312,1.10994 11.51325,18.44969 28.43106,25.12006c14.05831,5.54431 16.9205,4.44244 19.97081,4.16294c3.05031,-0.27681 9.847,-4.02587 11.23375,-7.912c1.38675,-3.88612 1.38675,-7.21594 0.97019,-7.912c-0.41656,-0.69338 -1.5265,-1.10994 -3.19006,-1.94306c-1.66356,-0.83313 -9.847,-4.859 -11.3735,-5.41263c-1.5265,-0.55363 -2.63644,-0.83313 -3.74638,0.83312c-1.10994,1.66356 -4.29731,5.41263 -5.2675,6.52256c-0.97019,1.11263 -1.94306,1.24969 -3.60662,0.41925c-1.66356,-0.83581 -7.02513,-2.59075 -13.38375,-8.26137c-4.94769,-4.41019 -8.28825,-9.85775 -9.25844,-11.524c-0.97019,-1.66356 -0.10481,-2.56656 0.731,-3.397c0.74712,-0.74444 1.66356,-1.94306 2.49669,-2.91594c0.83044,-0.97288 1.10725,-1.66625 1.66356,-2.77619c0.55363,-1.11263 0.27681,-2.08281 -0.13975,-2.91594c-0.41656,-0.83313 -3.64962,-9.05687 -5.12775,-12.34637z" fill="url(#color-2_43677_gr2)" fill-rule="evenodd"></path></g></g></svg></a>
+        </div>  
+        <div class="redes">
+            <a href="http://instagram.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 226 226"
+                style=" fill:#000000;"><defs><linearGradient x1="113" y1="23.54284" x2="113" y2="204.3605" gradientUnits="userSpaceOnUse" id="color-1_undefined_gr1"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient><linearGradient x1="113" y1="64.15222" x2="113" y2="161.30397" gradientUnits="userSpaceOnUse" id="color-2_undefined_gr2"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient><linearGradient x1="162.4375" y1="45.02344" x2="162.4375" y2="81.39178" gradientUnits="userSpaceOnUse" id="color-3_undefined_gr3"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><path d="M155.375,201.28125h-84.75c-25.312,0 -45.90625,-20.59425 -45.90625,-45.90625v-84.75c0,-25.312 20.59425,-45.90625 45.90625,-45.90625h84.75c25.312,0 45.90625,20.59425 45.90625,45.90625v84.75c0,25.312 -20.59425,45.90625 -45.90625,45.90625zM70.625,31.78125c-21.41703,0 -38.84375,17.42672 -38.84375,38.84375v84.75c0,21.41703 17.42672,38.84375 38.84375,38.84375h84.75c21.41703,0 38.84375,-17.42672 38.84375,-38.84375v-84.75c0,-21.41703 -17.42672,-38.84375 -38.84375,-38.84375z" fill="url(#color-1_undefined_gr1)"></path><path d="M113,158.90625c-25.312,0 -45.90625,-20.59425 -45.90625,-45.90625c0,-25.312 20.59425,-45.90625 45.90625,-45.90625c25.312,0 45.90625,20.59425 45.90625,45.90625c0,25.312 -20.59425,45.90625 -45.90625,45.90625zM113,81.21875c-17.52206,0 -31.78125,14.25919 -31.78125,31.78125c0,17.52559 14.25919,31.78125 31.78125,31.78125c17.52559,0 31.78125,-14.25566 31.78125,-31.78125c0,-17.52206 -14.25566,-31.78125 -31.78125,-31.78125z" fill="url(#color-2_undefined_gr2)"></path><path d="M162.4375,52.96875c-5.85077,0 -10.59375,4.74298 -10.59375,10.59375c0,5.85077 4.74298,10.59375 10.59375,10.59375c5.85077,0 10.59375,-4.74298 10.59375,-10.59375c0,-5.85077 -4.74298,-10.59375 -10.59375,-10.59375z" fill="url(#color-3_undefined_gr3)"></path></g></g></svg></a>
+            <a href="http://facebook.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><defs><linearGradient x1="101.17363" y1="38.96875" x2="101.17363" y2="152.85963" gradientUnits="userSpaceOnUse" id="color-1_44003_gr1"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient><linearGradient x1="86" y1="18.36369" x2="86" y2="155.92069" gradientUnits="userSpaceOnUse" id="color-2_44003_gr2"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M112.875,150.5v-48.375h14.39962l2.51012,-21.5h-16.90975v-11.97819c0,-5.63569 -0.35206,-9.47881 7.73194,-9.47881l8.39306,-0.00537v-17.41231c-2.6875,-0.2365 -6.68381,-0.76594 -13.803,-0.76594c-14.86456,0 -23.822,9.073 -23.822,25.7355v13.90512h-18.8125v21.5h18.8125v48.375z" fill="url(#color-1_44003_gr1)"></path><path d="M134.375,153.1875h-96.75c-10.37106,0 -18.8125,-8.44144 -18.8125,-18.8125v-96.75c0,-10.37106 8.44144,-18.8125 18.8125,-18.8125h96.75c10.37106,0 18.8125,8.44144 18.8125,18.8125v96.75c0,10.37106 -8.44144,18.8125 -18.8125,18.8125zM37.625,24.1875c-7.40944,0 -13.4375,6.02806 -13.4375,13.4375v96.75c0,7.40944 6.02806,13.4375 13.4375,13.4375h96.75c7.40944,0 13.4375,-6.02806 13.4375,-13.4375v-96.75c0,-7.40944 -6.02806,-13.4375 -13.4375,-13.4375z" fill="url(#color-2_44003_gr2)"></path></g></g></svg></a>
+            <a href="http://twitter.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><defs><linearGradient x1="86" y1="26.703" x2="86" y2="140.27406" gradientUnits="userSpaceOnUse" id="color-1_bYzsf9Bmocst_gr1"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient><linearGradient x1="104.55181" y1="26.703" x2="104.55181" y2="140.27406" gradientUnits="userSpaceOnUse" id="color-2_bYzsf9Bmocst_gr2"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient><linearGradient x1="112.875" y1="48.31856" x2="112.875" y2="57.8565" gradientUnits="userSpaceOnUse" id="color-3_bYzsf9Bmocst_gr3"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M154.78656,43.23113c-0.76863,-0.91644 -2.04788,-1.20938 -3.14437,-0.72831c-1.65013,0.72831 -3.34594,1.376 -5.08206,1.93231c2.2145,-2.78156 3.92912,-5.9555 5.03637,-9.38206c0.34131,-1.06425 -0.00537,-2.22256 -0.87613,-2.92131c-0.87075,-0.70144 -2.08012,-0.79281 -3.03956,-0.22306c-4.77569,2.79769 -9.8685,4.80525 -15.16019,5.97431c-5.55237,-5.30513 -13.06394,-8.3205 -20.84156,-8.3205c-16.57919,0 -30.07044,13.37837 -30.07044,29.82319c0,1.08575 0.05912,2.17687 0.18006,3.26263c-19.91437,-1.89469 -38.40169,-11.67181 -51.13506,-27.15181c-0.55631,-0.67725 -1.39213,-1.03469 -2.28438,-0.97287c-0.87344,0.06719 -1.66088,0.55631 -2.107,1.3115c-2.66869,4.51231 -4.08231,9.70994 -4.08231,15.03119c0,6.57631 2.16881,12.84625 6.03881,17.9525c-0.78475,-0.33056 -1.55606,-0.69875 -2.30856,-1.10725c-0.83581,-0.44881 -1.84362,-0.43269 -2.65525,0.05644c-0.81431,0.48644 -1.3115,1.36256 -1.3115,2.30856v0.31981c0,9.96525 5.02025,19.00869 12.86237,24.467c-0.03225,-0.00538 -0.0645,-0.01344 -0.09675,-0.01881c-0.94062,-0.17469 -1.87856,0.16662 -2.49937,0.87881c-0.62081,0.71219 -0.82238,1.69581 -0.53213,2.59613c3.17663,9.804 11.15044,17.12206 20.87919,19.70475c-8.07056,4.75956 -17.20269,7.24819 -26.75944,7.24819c-2.11237,0 -4.20056,-0.12363 -6.20275,-0.36819c-1.25506,-0.15856 -2.43487,0.58588 -2.85681,1.76569c-0.42194,1.1825 0.03225,2.50206 1.09381,3.17394c13.01556,8.23987 28.02794,12.59362 43.41656,12.59362c50.44975,0 80.59544,-40.63231 80.59544,-79.9155c0,-0.72831 -0.01344,-1.45394 -0.03763,-2.17687c5.12506,-3.82431 9.546,-8.48981 13.158,-13.89169c0.66381,-0.99438 0.59125,-2.30588 -0.17737,-3.22231zM137.51131,56.82181c-0.74981,0.52944 -1.17713,1.40556 -1.13412,2.32469c0.05375,1.11531 0.09137,2.24137 0.09137,3.3755c0,36.63869 -28.13544,74.5405 -75.22044,74.5405c-10.70162,0 -21.21512,-2.2575 -30.90356,-6.58975c11.35738,-0.86269 22.03213,-4.97188 31.10781,-12.00775c0.90031,-0.69875 1.26313,-1.88662 0.903,-2.967c-0.36013,-1.08037 -1.35988,-1.81944 -2.49938,-1.84362c-9.08644,-0.17469 -17.21075,-5.246 -21.36025,-12.99406c2.99656,0.10213 5.92056,-0.26606 8.80425,-1.05619c1.20131,-0.33056 2.01831,-1.44319 1.97531,-2.6875c-0.04569,-1.247 -0.94063,-2.29512 -2.16075,-2.53969c-10.13994,-2.021 -17.8235,-10.13994 -19.46825,-20.01919c3.01537,1.08306 6.17319,1.69581 9.32025,1.79256c1.23356,0.02956 2.279,-0.72831 2.64181,-1.8705c0.3655,-1.14487 -0.07256,-2.39187 -1.07231,-3.05569c-6.87463,-4.56338 -10.97575,-12.17438 -10.97575,-20.35781c0,-3.05031 0.56438,-6.04687 1.65012,-8.83381c14.29481,15.66006 34.357,25.15769 55.66888,26.23c0.8815,0.05912 1.65819,-0.31175 2.19569,-0.95944c0.54287,-0.64769 0.74712,-1.51306 0.55631,-2.33275c-0.43,-1.84094 -0.645,-3.7195 -0.645,-5.58194c0,-13.4805 11.07787,-24.44819 24.69544,-24.44819c6.81819,0 13.38106,2.81381 18.00625,7.71581c0.63156,0.6665 1.56144,0.96481 2.46444,0.7955c3.72219,-0.71756 7.36106,-1.80331 10.879,-3.24919c-1.95919,2.70631 -4.47469,5.01219 -7.41481,6.75637c-1.09381,0.65038 -1.58294,1.97531 -1.17175,3.182c0.41119,1.20131 1.60444,1.96188 2.87025,1.79794c2.5585,-0.31444 5.06863,-0.78475 7.51694,-1.41094c-2.23331,2.32469 -4.67894,4.429 -7.32075,6.29412z" fill="url(#color-1_bYzsf9Bmocst_gr1)"></path><path d="M82.69975,123.04988l1.66894,5.10625c19.14306,-6.25113 34.4645,-21.26888 42.03788,-41.19938l-5.02294,-1.91081c-4.11187,10.81987 -14.60119,30.13763 -38.68387,38.00394z" fill="url(#color-2_bYzsf9Bmocst_gr2)"></path><g fill="url(#color-3_bYzsf9Bmocst_gr3)"><circle cx="42" cy="20" transform="scale(2.6875,2.6875)" r="2"></circle></g></g></g></svg></a>
+        </div>
+        <div class="volver">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><defs><linearGradient x1="86" y1="31.35506" x2="86" y2="138.74488" gradientUnits="userSpaceOnUse" id="color-1_52512_gr1"><stop offset="0" stop-color="#cd7a7a"></stop><stop offset="1" stop-color="#420c14"></stop></linearGradient><linearGradient x1="86" y1="48.375" x2="86" y2="119.6045" gradientUnits="userSpaceOnUse" id="color-2_52512_gr2"><stop offset="0" stop-color="#eccccc"></stop><stop offset="1" stop-color="#a11d30"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M150.48656,139.75c-1.40019,0 -2.76812,-0.54825 -3.80281,-1.58025l-58.77831,-58.89387c-1.01856,-1.01856 -2.79231,-1.02125 -3.81087,0.00269l-58.77831,58.8885c-1.548,1.54262 -3.85656,2.00219 -5.86413,1.17444c-2.021,-0.8385 -3.32712,-2.795 -3.32712,-4.98262v-34.33013c0,-2.15538 0.8385,-4.18175 2.35694,-5.70825l58.01506,-58.12525c2.537,-2.54237 5.9125,-3.94525 9.503,-3.94525c3.5905,0 6.966,1.40019 9.503,3.94525l58.01238,58.12256c1.52113,1.53187 2.35962,3.55556 2.35962,5.71094v34.32744c0,2.18762 -1.30612,4.14413 -3.32712,4.98263c-0.6665,0.27681 -1.36794,0.41119 -2.06131,0.41119zM86,73.11075c2.15806,0 4.18444,0.84119 5.71094,2.36769l58.77831,58.89387l0.01075,-0.01344v-34.33013c0,-0.72563 -0.2795,-1.40287 -0.79281,-1.91887l-58.00969,-58.11987c-3.04494,-3.05031 -8.35006,-3.05031 -11.395,0l-58.01237,58.12256c-0.51063,0.51331 -0.79012,1.19325 -0.79012,1.91619v34.32744l58.78906,-58.87775c1.5265,-1.52919 3.55288,-2.36769 5.71094,-2.36769z" fill="url(#color-1_52512_gr1)"></path><path d="M80.3025,51.84456l-52.64544,52.66963c-0.49987,0.50256 -0.78206,1.1825 -0.78206,1.892v14.05025l55.32487,-55.298c2.09894,-2.09894 5.504,-2.09894 7.60294,0l55.32219,55.298v-14.04219c0,-0.71219 -0.28219,-1.3975 -0.78744,-1.90275l-52.64006,-52.66694c-3.14437,-3.14438 -8.25062,-3.14438 -11.395,0z" fill="url(#color-2_52512_gr2)"></path></g></g></svg></a>
+        </div>
+    </nav>
+
 <!-- -----HERO----- -->
     <section class="text-gray-700 body-font">
         <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
@@ -57,12 +117,12 @@
             <p class="mb-8 leading-relaxed">En nuestro recorrido hemos construido una gran cantidad de hogares, terminando en su totalidad cada proyecto iniciado. Contamos con un equipo de profesionales de gran experiencia y trayectoria en su campo.</p>
             <p class="mb-8 leading-relaxed">Hemos construido lazos duraderos con nuestros principales proveedores, lo que nos da una gran estabilidad para materializar incluso los proyectos más complejos</p>
             <div class="flex justify-center">
-            <button class="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Ventas</button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Nosotros</button>
+            <button class="inline-flex text-white bg-orange-500 border border-white py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Ventas</button>
+            <button class="ml-4 inline-flex text-orange-600 bg-gray-200 py-2 px-6 hover:bg-gray-300 rounded text-lg btn-nos border border-orange-700">Nosotros</button>
             </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="./ISA-assets/ISA/Isa/ISA1.jpg">
+            <img class="object-cover object-center rounded" alt="hero" src="./ISA-assets/ISA/Isa/ISA1.webp">
         </div>
         </div>
     </section>
@@ -76,67 +136,67 @@
         <div class="flex flex-wrap -m-4">
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/Piamonte/Piamonte.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/Piamonte/Piamonte.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Diseñados por nosotros</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EDIFICIOS</h1>
                 <p class="leading-relaxed">Obras de edificios multifamiliares e institucionales/oficinas de categoría, con un eficaz cumplimiento de plazos.</p>
                 </div>
             </div>
-            <h3 class="text-center">EDIFICIOS</h3>
+            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mt-2 text-center">EDIFICIOS</h2>
 
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/La Giustina/Giustina.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/La Giustina/Giustina.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">La exclusividad que necesita</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BARRIOS CERRADOS</h1>
                 <p class="leading-relaxed">Primamos el perfil del conjunto siendo sustentables en cuanto a diseño y métodos constructivos.</p>
                 </div>
             </div>
-            <h3 class="text-center">BARRIOS CERRADOS</h3>
+            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mt-2 text-center">BARRIOS CERRADOS</h2>
 
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/Recodo/recodo01.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/Recodo/recodo01.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Comfort y estilo</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">HOTELERÍA</h1>
                 <p class="leading-relaxed">Amplia experiencia en construcción de complejos turísticos que aseguran una gestión confiable y sin riesgos.</p>
                 </div>
             </div>
-            <h3 class="text-center">HOTELERÍA</h3>
+            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mt-2 text-center">HOTELERÍA</h2>
 
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/Imperio/imperio01.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/Imperio/imperio01.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Confianza y previsión</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">EDIFICIOS PARA TERCEROS</h1>
                 <p class="leading-relaxed">Obras de edificios multifamiliares e institucionales/oficinas de categoría, con un eficaz cumplimiento de plazos.</p>
                 </div>
             </div>
-            <h3 class="text-center">EDIFICIOS PARA TERCEROS</h3>
+            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mt-2 text-center">EDIFICIOS PARA TERCEROS</h2>
 
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/Obras_Particulares/op01.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/Obras_Particulares/op01.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Excelencia a escala</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">OBRAS PARTICULARES</h1>
                 <p class="leading-relaxed">Dirigimos y ejecutamos proyectos a medida, según los requerimientos y objetivos de nuestros clientes.</p>
                 </div>
             </div>
-            <h3 class="text-center">OBRAS PARTICULARES</h3>
+            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mt-2 text-center">OBRAS PARTICULARES</h2>
 
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4 border border-gray-300">
             <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./ISA-assets/ISA/Obras_Particulares/cocina1.jpg">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" src="./ISA-assets/ISA/Obras_Particulares/cocina1.webp">
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                 <h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Moderno y elegante</h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">DISEÑO E INTERIORISMO</h1>
@@ -150,8 +210,8 @@
     </section>
 <!-- -----PILARES----- -->
     <section class="text-gray-700 body-font">
-        <div class="container px-5 py-12 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
+        <div class="container px-5 py-8 mx-auto">
+        <div class="flex flex-col text-center w-full mb-10">
             <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">Definiendonos desde hace más de medio siglo</h2>
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">NUESTROS PILARES</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Tenemos principios que nos definen, basados en la trayectoria y experiencia en el rubro, contando con una atención personalizada que fideliza la relación a largo plazo con nuestros clientes y nos motiva a seguir brindando soluciones constructivas.</p>
@@ -193,27 +253,43 @@
                 </svg>
             </a>
             </div>
+    </section>
+<!-- -----MISIÓN----- -->
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-4 mx-auto">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed text-lg">Nuestra <span class="highlight">MISIÓN</span> es desarrollar proyectos sustentables que agreguen valor a la vida de las familias, con la <span class="highlight">VISIÓN</span> de consolidarnos a nivel nacional con nuestro método de trabajo sólido, eficiente y confiable.</p>
+            <p class="leading-relaxed text-lg">Tenemos como <span class="highlight">PROPUESTA DE VALOR</span> identificarnos como referentes confiables, sólidos y profesionales en nuestro accionar.</p><br>
+            <span class="inline-block h-1 w-10 rounded bg-orange-500 mt-4 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm"><mark>HOLDEN CAULFIELD</mark></h2>
+            <p class="text-gray-500"><mark>Senior Product Designer</mark></p>
+          </div>
         </div>
-        <button class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Botón</button>
         </div>
+        <button class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 mb-4 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Contáctenos</button>
+        </div>
+
     </section>
 <!-- -----CONTACTO----- -->
 <a class="anchor-link" name="contacto"></a> <!--ANCHOR TAG-->
     <section class="text-gray-700 body-font relative">
         <div class="absolute inset-0 bg-gray-300">
-        <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.2546073392878!2d-58.56124918520093!3d-34.4456842566595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca529a76e78b1%3A0x4c5692c303f0520a!2sTaller%20Yrigoyen!5e0!3m2!1sen!2sar!4v1599155209816!5m2!1sen!2sar" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.20492613862!2d-58.70082228519729!3d-34.54836646207776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd07603303b5%3A0x546ae223ead6b7ae!2sIsa%20Constructora%20SRL!5e0!3m2!1sen!2sar!4v1601060708586!5m2!1sen!2sar" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
         </div>
         <div class="container px-5 py-24 mx-auto flex">
-        <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+        <div class="lg:w-1/3 md:w-1/2 bg-white border border-orange-700 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
             <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Buzón de contacto</h2>
-            <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+            <p class="leading-relaxed mb-5 text-gray-600"><mark>Post-ironic portland shabby chic echo park, banjo fashion axe</mark></p>
             <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4" placeholder="Nombre" type="name">
             <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4" placeholder="Teléfono" type="phone">
             <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email">
 
-            <textarea class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-orange-500 text-base px-4 py-2 mb-4 resize-none" placeholder="Message"></textarea>
+            <textarea class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-orange-500 text-base px-4 py-2 mb-4 resize-none" placeholder="Escríbanos algo..."></textarea>
             <button class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Enviar</button>
-            <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        <p class="text-xs text-gray-500 mt-3"><mark>Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</mark></p>
         </div>
         </div>
     </section>
@@ -251,6 +327,7 @@
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
       <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Proyectos</h2>
       <nav class="list-none mb-10">
+        <ul>
           <li>
           <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
@@ -263,23 +340,26 @@
           <li>
           <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
+        </ul>
       </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
       <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Correos</h2>
       <nav class="list-none mb-2">
           <h5>Ventas</h5>
-          <li>
-          <a class="text-gray-600 hover:text-gray-800">ventas@isaconstructora.com</a>
-          </li> <br>
-          <h5>Proveedores</h5>
-          <li>
-          <a class="text-gray-600 hover:text-gray-800">proveedores@isaconstructora.com</a>
-          </li>  <br>
-          <h4>Dejanos tu Cv</h4>
-          <li> 
-          <a class="text-gray-600 hover:text-gray-800">rrhh@isaconstructora.com</a>
-          </li>
+        <ul>
+            <li>
+            <a class="text-gray-600 hover:text-gray-800">ventas@isaconstructora.com</a>
+            </li> <br>
+            <h5>Proveedores</h5>
+            <li>
+            <a class="text-gray-600 hover:text-gray-800">proveedores@isaconstructora.com</a>
+            </li>  <br>
+            <h4>Dejanos tu Cv</h4>
+            <li> 
+            <a class="text-gray-600 hover:text-gray-800">rrhh@isaconstructora.com</a>
+            </li>
+        </ul>
       </nav>
       </div>
   </div>
@@ -316,5 +396,17 @@
   </div>
   </div>
 </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+    </script>
+
 </body>
 </html>
