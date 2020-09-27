@@ -1,32 +1,45 @@
-const img = document.getElementById('carousel');
-const rightBtn = document.getElementById('right-btn');
-const leftBtn = document.getElementById('left-btn');
 
-// Images are from unsplash
-let pictures = ['./assets/edificios/edi1.jpg', './assets/edificios/edi2.jpg', './assets/edificios/edi3.jpg', './assets/edificios/edi4.jpg'];
+// SCRIPT PARA EL MENÚ EN CELULARES 
 
-img.src = pictures[0];
-let position = 0;
-
-moveRight = () => {
-    if (position >= pictures.length - 1) {
-        position = 0
-        img.src = pictures[position];
-        return;
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
     }
-    img.src = pictures[position + 1];
-    position++;
+    }
+
+
+// SCRIPT PARA EL AUTOPLAY DE IMAGENES
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-moveLeft = () => {
-    if (position < 1) {
-        position = pictures.length - 1;
-        img.src = pictures[position];
-        return;
-    }
-    img.src = pictures[position - 1];
-    position--;
+var slideIndex = 0;
+showSlides1();
+
+function showSlides1() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides1, 2000); // Change image every 2 seconds
 }
 
-rightBtn.addEventListener("click", moveRight);
-leftBtn.addEventListener("click", moveLeft);
