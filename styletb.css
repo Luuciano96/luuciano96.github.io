@@ -142,6 +142,140 @@ nav .icon{
     border: solid, 3px, rgba(93,54,21,.75);
 }
 
+/* ESTILOS DE DESAROLLOS Y PROYECTOS ------------------------------------------------------------------------*/
+.portada{
+    height: 55vh;
+    margin-top: 64px;
+    background-color: var(--pri);
+    background-image: url(./assets/portada-obreros.webp);
+    /*background-blend-mode: hard-light;*/
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portada_b{
+    height: 55vh;
+    margin-top: 64px;
+    background-color: var(--pri);
+    background-image: url(./assets/portada-dibujo.webp);
+    /*background-blend-mode: hard-light;*/
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portada_c{
+    height: 55vh;
+    margin-top: 64px;
+    background-color: var(--pri);
+    background-image: url(./assets/portada-nosotros.webp);
+    /*background-blend-mode: hard-light;*/
+    background-attachment: fixed;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.p-text{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    margin-left: 5%;
+    width: auto;
+    text-align: right;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.p-text_b{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    margin-right: 5%;
+    width: auto;
+    text-align: left;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.p-text_c{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    width: auto;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.border-texto{
+    color:#fff;
+    white-space: normal;
+    background-color:#111;
+    padding:20px;
+    opacity: 0.75;
+    border-radius: 0.5rem;
+}
+
+/* PRUEBA CAROUSEL ------------------------------------------------------------------------*/
+
+.container-carousel {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /*  box-shadow is from materialize css's website */
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+.container-carousel img {
+    width: 100%;
+    z-index: -2;
+}
+button {
+    height: 10%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+}
+
+button .arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#right-btn {
+    margin: auto 0 auto -2em;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+#left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
 
 
 
@@ -159,13 +293,11 @@ nav .icon{
 
 
 
-
-
-
+/* PRUEBA CAROUSEL ------------------------------------------------------------------------*/
 
 /* MEDIA QUERIES ------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px){
-    .showcase{
+    .showcase, .desarrollos{
         margin-top: 100px;
     }
     .border-text h1{
