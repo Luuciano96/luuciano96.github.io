@@ -18,7 +18,8 @@ section, footer{
     color: var(--pri);
 }
 /* FIN ESTILOS GLOBALES ------------------------------------------------------------------------*/
-/* ESTILOS DEL HEADER ------------------------------------------------------------------------*/
+
+/* ESTILOS DEL HEADER --------------------------------------------------------------------------*/
 header{
     background-color: #f6f3ef;
     position: fixed;
@@ -36,7 +37,7 @@ header{
 nav .icon{
     display: none;
 }
-/* FIN ESTILOS DEL HEADER ------------------------------------------------------------------------*/
+/* FIN ESTILOS DEL HEADER -----------------------------------------------------------------------------*/
 
 /* ESTILOS DE LA BOTTOM NAVBAR ------------------------------------------------------------------------*/
 .bottom-navbar{
@@ -58,7 +59,7 @@ nav .icon{
     flex-flow: row nowrap;
     align-items: flex-end;
 }
-/* ESTILOS DE LA BOTTOM NAVBAR ------------------------------------------------------------------------*/
+/* ESTILOS DE LA BOTTOM NAVBAR ---------------------------------------------------------------------------*/
 
 /* ESTILOS DEL SHOWCASE - PORTADA ------------------------------------------------------------------------*/
 .showcase{
@@ -109,7 +110,7 @@ nav .icon{
 }
 /* FIN ESTILOS DEL SHOWCASE - PORTADA ------------------------------------------------------------------------*/
 
-/* ANIMACIÓN DE LA PORTADA ------------------------------------------------------------------------*/
+/* ANIMACIÓN DE LA PORTADA -----------------------------------------------------------------------------------*/
 .border-text p {
     animation: animated-text 4s steps(29,end) 1s 1 normal both,
                animated-cursor 600ms steps(29,end) infinite;
@@ -132,49 +133,45 @@ nav .icon{
 
 /* FIN DE ANIMACIÓN DE LA PORTADA ------------------------------------------------------------------------*/
 
-/* ESTILOS DE HERO SECTION ------------------------------------------------------------------------*/
+/* ESTILOS DE HERO SECTION -------------------------------------------------------------------------------*/
 
 .btn-nos{
     border: solid, 3px, rgba(93,54,21,.75);
 }
 
 /* ESTILOS DE DESAROLLOS Y PROYECTOS ------------------------------------------------------------------------*/
-.portada{
+.portada_gral{
     height: 55vh;
     margin-top: 64px;
     background-color: var(--pri);
-    background-image: url(./assets/portada-obreros.webp);
-    /*background-blend-mode: hard-light;*/
-    background-blend-mode: multiply;
     background-attachment: fixed;
-    background-position: 50% 85%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.portada_b{
-    height: 55vh;
-    margin-top: 64px;
-    background-color: var(--pri);
-    background-image: url(./assets/portada-dibujo.webp);
-    /*background-blend-mode: hard-light;*/
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-position: 50% 85%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.portada_c{
-    height: 55vh;
-    margin-top: 64px;
-    background-color: var(--pri);
-    background-image: url(./assets/portada-nosotros.webp);
-    /*background-blend-mode: hard-light;*/
-    background-attachment: fixed;
-    background-position: 50% 55%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.portada_a{
+    background-image: url(./assets/portada-obreros.webp);
+    /*background-blend-mode: hard-light;*/
+    background-blend-mode: multiply;
+    background-position: 50% 85%;
+}
+.portada_b{
+    background-image: url(./assets/portada-dibujo.webp);
+    /*background-blend-mode: hard-light;*/
+    background-blend-mode: multiply;
+    background-position: 50% 85%;
+}
+.portada_c{
+    background-image: url(./assets/portada-nosotros.webp);
+    /*background-blend-mode: hard-light;*/
+    background-position: 50% 55%;
+}
+.portada_d{
+    background-image: url(./assets/portada-edificios.webp);
+    /*background-blend-mode: hard-light;*/
+    background-blend-mode: multiply;
+    background-position: 50% 85%;
+}
 
 .p-text{
     position: absolute;
@@ -222,31 +219,47 @@ nav .icon{
     border-radius: 0.5rem;
 }
 
-/* PRUEBA CAROUSEL ------------------------------------------------------------------------*/
+/*ESTILOS DE LAS SLIDES  ------------------------------------------------------------------------*/
 
-.slideshow img{
-    object-fit: cover;
-    max-height: 100%;
+.mySlides1, .mySlides2, .mySlides3, .mySlides4{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #222;
+  background-color: rgba(0, 0 , 0, 0.1);
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slideshow-container{
+    height: 500px;
     overflow: hidden;
 }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* FIN DE ESTILOS DE LAS SLIDES  ------------------------------------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* PRUEBA CAROUSEL ------------------------------------------------------------------------*/
 
 /* MEDIA QUERIES ------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px){
@@ -289,5 +302,9 @@ nav .icon{
     }
     .logo{
         margin-top: 5px;
+    }
+    .slideshow-container{
+        height: 300px;
+        margin-top: 40px;
     }
 }
