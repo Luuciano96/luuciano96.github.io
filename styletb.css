@@ -2,7 +2,7 @@
 body{
     /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e6e4e1' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
     font-family: 'Montserrat', sans-serif;
-    background-color: #f6f3ef;
+    background-color: rgba(246, 243, 239, 0.45);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23eeb382' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 html{
@@ -34,9 +34,16 @@ header{
     color: #777;
     border-bottom: solid 2px var(--pri);
 }
+.nav-link:active{
+    border-bottom: solid 2px var(--pri);
+}
+.active{
+    border-bottom: solid 2px var(--pri); 
+}
 nav .icon{
     display: none;
 }
+
 /* FIN ESTILOS DEL HEADER -----------------------------------------------------------------------------*/
 
 /* ESTILOS DE LA BOTTOM NAVBAR ------------------------------------------------------------------------*/
@@ -112,7 +119,7 @@ nav .icon{
 
 /* ANIMACIÓN DE LA PORTADA -----------------------------------------------------------------------------------*/
 .border-text p {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animation: animated-text 3s steps(29,end) 1s 1 normal both,
                animated-cursor 600ms steps(29,end) infinite;
   }
   
@@ -120,7 +127,7 @@ nav .icon{
   
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 515px;}
+    to{width: 550px;}
   }
   
   /* cursor animations */
@@ -239,7 +246,7 @@ nav .icon{
   font-weight: bold;
   font-size: 36px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 6px 6px 0;
   user-select: none;
 }
 .slideshow-container{
@@ -249,7 +256,7 @@ nav .icon{
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 6px 0 0 6px;
 }
 
 /* On hover, add a grey background color */
@@ -258,7 +265,24 @@ nav .icon{
   color: black;
 }
 /* FIN DE ESTILOS DE LAS SLIDES  ------------------------------------------------------------------------*/
-
+/* ANIMACIÓN DE LAS SLIDES  -----------------------------------------------------------------------------*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* FIN DE ANIMACIÓN DE LAS SLIDES  ------------------------------------------------------------------------*/
 
 
 /* MEDIA QUERIES ------------------------------------------------------------------------*/
@@ -306,5 +330,8 @@ nav .icon{
     .slideshow-container{
         height: 300px;
         margin-top: 40px;
+    }
+    .links{
+        display: none;
     }
 }
