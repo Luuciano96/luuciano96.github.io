@@ -79,6 +79,7 @@ nav .icon{
 .showcase-text{
     position: relative;
     z-index: 2;
+    font-family: 'Piazzolla', serif;
 }
 .showcase::after{
     content: '';
@@ -96,12 +97,9 @@ nav .icon{
     background-repeat: no-repeat;
 }
 .border-text h1{
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 56px;
     letter-spacing: 8px;
     text-transform: uppercase; 
-    text-shadow: 3px 3px 20px var(--pri),
-    -2px 1px 30px var(--pri);
 }
 .border-text p{
     text-align: left;
@@ -133,18 +131,12 @@ nav .icon{
   /* cursor animations */
   
   @keyframes animated-cursor{
-    from{border-right-color: rgba(93,54,21,.75);}
+    from{border-right-color: rgba(93,54,21,.85);}
     to{border-right-color: transparent;}
   }
 
 
 /* FIN DE ANIMACIÓN DE LA PORTADA ------------------------------------------------------------------------*/
-
-/* ESTILOS DE HERO SECTION -------------------------------------------------------------------------------*/
-
-.btn-nos{
-    border: solid, 3px, rgba(93,54,21,.75);
-}
 
 /* ESTILOS DE DESAROLLOS Y PROYECTOS ------------------------------------------------------------------------*/
 .portada_gral{
@@ -154,67 +146,48 @@ nav .icon{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
+    background-position: 50% 85%;
+
 }
 
-.portada_a{
-    background-image: url(./assets/portada-obreros.webp);
-    /*background-blend-mode: hard-light;*/
-    background-blend-mode: multiply;
-    background-position: 50% 85%;
-}
-.portada_b{
-    background-image: url(./assets/portada-dibujo.webp);
-    /*background-blend-mode: hard-light;*/
-    background-blend-mode: multiply;
-    background-position: 50% 85%;
-}
-.portada_c{
-    background-image: url(./assets/portada-nosotros.webp);
-    /*background-blend-mode: hard-light;*/
-    background-position: 50% 55%;
-}
-.portada_d{
-    background-image: url(./assets/portada-edificios.webp);
-    /*background-blend-mode: hard-light;*/
-    background-blend-mode: multiply;
-    background-position: 50% 85%;
-}
+.portada_a{background-image: url(./assets/portada-obreros.webp);}
+.portada_b{background-image: url(./assets/portada-dibujo.webp);}
+.portada_c{background-image: url(./assets/portada-nosotros.webp);background-position: 50% 55%;background-blend-mode: normal;}
+.portada_d{background-image: url(./assets/portada-edificios.webp);}
+.portada_e{background-image: url(./assets/condominios/petalos-1.webp);}
+.portada_e{background-image: url(./assets/condominios/petalos-1.webp);}
+.portada_f{background-image: url(./assets/Recodo/recodo03.webp);background-position: 50% 55%;}
+.portada_g{background-image: url(./assets/terceros/imperio01.webp);}
+.portada_h{background-image: url(./assets/op/op4.webp);}
+.portada_i{background-image: url(./assets/obra/piamonte-obra4.webp);}
+.portada_j{background-image: url(./assets/proyectos/isa3.webp);}
+.portada_k{background-image: url(./assets/ventas.jpg);}
+.portada_l{background-image: url(./assets/interiorismo/interiorismo-005.webp);}
 
 .p-text{
     position: absolute;
     top: 30%;
+    width: auto;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.der{
     right: 5%;
     margin-left: 5%;
-    width: auto;
     text-align: right;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
 }
-.p-text_b{
-    position: absolute;
-    top: 30%;
+.izq{
     left: 5%;
     margin-right: 5%;
-    width: auto;
     text-align: left;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
 }
-.p-text_c{
-    position: absolute;
-    top: 30%;
+.cent{
     left: 20%;
     right: 20%;
-    width: auto;
     text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
 }
 
 .border-texto{
@@ -333,5 +306,25 @@ nav .icon{
     }
     .links{
         display: none;
+    }
+}
+@media only screen and (max-height: 450px){
+    .showcase{
+        margin-top: 125px;
+    }
+    .border-text h1{
+        font-size: 28px;
+    }
+    .border-text p{
+        font-size: 18px;
+        /*background-color: rgba(51, 51, 51, 0.6);*/
+        width: 70%;
+        align-content: center;
+        animation: none;
+        white-space: normal;
+        border-right: none;
+    }
+    .logo{
+        margin-top: 5px;
     }
 }
