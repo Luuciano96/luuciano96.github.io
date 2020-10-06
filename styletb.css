@@ -2,20 +2,23 @@
 body{
     /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e6e4e1' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(246, 243, 239, 0.45);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23eeb382' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: rgba(218, 205, 205, 0.45);
 }
 html{
     scroll-behavior: smooth;
 }
-section, footer{
-    background-color: rgba(255,255,255,0.45);
-}
 :root{
-    --pri: #f49445; 
+    --pri: #f49445;
+    --sec: #ECC94B;
 }
 .highlight{
     color: var(--pri);
+}
+.under{
+    text-decoration: underline solid #F6E05E;
+}
+.titles{
+    font-family: 'Old Standard TT', serif;
 }
 /* FIN ESTILOS GLOBALES ------------------------------------------------------------------------*/
 
@@ -38,7 +41,7 @@ header{
     border-bottom: solid 2px var(--pri);
 }
 .active{
-    border-bottom: solid 2px var(--pri); 
+    border-bottom: solid 2px var(--sec); 
 }
 nav .icon{
     display: none;
@@ -79,8 +82,10 @@ nav .icon{
 .showcase-text{
     position: relative;
     z-index: 2;
-    font-family: 'Piazzolla', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
+
 .showcase::after{
     content: '';
     display: block;
@@ -137,6 +142,19 @@ nav .icon{
 
 
 /* FIN DE ANIMACIÓN DE LA PORTADA ------------------------------------------------------------------------*/
+/* ANIMACIÓN DE LAS TARJETAS DE VALORES ------------------------------------------------------------------------*/
+.card {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -2px, 0px);
+  }
+
+
+/* FIN DE ANIMACIÓN DE LAS TARJETAS DE VALORES ------------------------------------------------------------------------*/
 
 /* ESTILOS DE DESAROLLOS Y PROYECTOS ------------------------------------------------------------------------*/
 .portada_gral{
@@ -262,6 +280,9 @@ nav .icon{
 @media only screen and (max-width: 600px){
     .showcase, .desarrollos{
         margin-top: 100px;
+    }
+    .showcase{
+        height: 60vh;
     }
     .border-text h1{
         font-size: 28px;
