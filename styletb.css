@@ -14,11 +14,16 @@ html{
 .highlight{
     color: var(--pri);
 }
+.highlight-b{
+    color: var(--sec);
+}
 .under{
     text-decoration: underline solid #F6E05E;
 }
 .titles{
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    color: var(--pri);
 }
 /* FIN ESTILOS GLOBALES ------------------------------------------------------------------------*/
 
@@ -83,7 +88,8 @@ nav .icon{
     position: relative;
     z-index: 2;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
+    color: var(--sec);
 }
 
 .showcase::after{
@@ -96,7 +102,7 @@ nav .icon{
     height: 100%;
     z-index: 1;
     opacity: 0.4;
-    background-image: url(./ISA-assets/ISA/Obras_Particulares/showcase-1.jpg);
+    background-image: url(./assets/index/showcase.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,8 +116,8 @@ nav .icon{
     text-align: left;
     margin-right: 50px;
     font-weight: 500;
-/* PRUEBA DE TYPEWRITER EFFECT */
-    border-right: solid 3px rgba(93,54,21,.75);
+/* TYPEWRITER EFFECT */
+    border-right: solid 3px rgba(236,201,75,.75);
     white-space: nowrap;
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace;  
@@ -136,7 +142,7 @@ nav .icon{
   /* cursor animations */
   
   @keyframes animated-cursor{
-    from{border-right-color: rgba(93,54,21,.85);}
+    from{border-right-color: rgba(236,201,75,.85);}
     to{border-right-color: transparent;}
   }
 
@@ -214,7 +220,6 @@ nav .icon{
     background-color:#111;
     padding:20px;
     opacity: 0.75;
-    border-radius: 0.5rem;
 }
 
 /*ESTILOS DE LAS SLIDES  ------------------------------------------------------------------------*/
@@ -279,7 +284,7 @@ nav .icon{
 /* MEDIA QUERIES ------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px){
     .showcase, .desarrollos{
-        margin-top: 100px;
+        margin-top: 55px;
     }
     .showcase{
         height: 60vh;
@@ -288,7 +293,7 @@ nav .icon{
         font-size: 28px;
     }
     .border-text p{
-        font-size: 18px;
+        font-size: 28px;
         /*background-color: rgba(51, 51, 51, 0.6);*/
         width: 70%;
         align-content: center;
