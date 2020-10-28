@@ -54,7 +54,7 @@ $('#Fullscreen').click(function () {
 
 // SCRIPT PARA EL CONTADOR AUTOMÁTICO DE STATS
 
-Number.prototype.format = function(n) {
+/*Number.prototype.format = function(n) {
     var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
     return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
 };
@@ -69,4 +69,7 @@ $('.count').each(function () {
             $(this).text('' + step.format());
         }
     });
-});
+});*/
+
+// SCRIPT PARA EL CONTADOR AUTOMÁTICO DE STATS
+
