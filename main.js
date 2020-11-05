@@ -1,3 +1,49 @@
+// SCRIPT PARA EL CONTADOR AUTOMÁTICO DE STATS
+
+let counts = document.querySelectorAll('.count');
+
+counts.forEach((count)=>{
+
+	const updateCount = ()=>{
+  
+  	let currentCount = parseInt(count.innerText);
+    let targetCount = count.getAttribute('data-target');
+    let increaseSpeed = 35;
+    let increaseCount = parseInt(targetCount / increaseSpeed);
+    
+    	if(currentCount < targetCount){
+        count.innerText = currentCount + increaseCount;
+        }else{
+        count.innerText = targetCount;
+        }
+        setTimeout(updateCount, increaseSpeed);
+  }
+updateCount();
+})
+
+// SWIPER LAUNCHER
+var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 400,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+})
+
 
 // SCRIPT PARA EL MENÚ EN CELULARES 
 
@@ -52,24 +98,4 @@ $('#Fullscreen').click(function () {
     $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
 });
 
-// SCRIPT PARA EL CONTADOR AUTOMÁTICO DE STATS
-
-/*Number.prototype.format = function(n) {
-    var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
-    return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
-};
-
-$('.count').each(function () {
-    $(this).prop('counter', 0).animate({
-        counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'easeOutExpo',
-        step: function (step) {
-            $(this).text('' + step.format());
-        }
-    });
-});*/
-
-// SCRIPT PARA EL CONTADOR AUTOMÁTICO DE STATS
 
