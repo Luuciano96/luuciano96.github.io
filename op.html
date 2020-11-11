@@ -31,8 +31,9 @@
         <!-- -----CSS----- -->
 <link rel="stylesheet" href="styletb.css">
 <link rel="stylesheet" href="tailwind.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <!-- -----FONTS----- -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- -----FONTAWESOME KIT----- -->
 <script src="https://kit.fontawesome.com/6178921733.js" crossorigin="anonymous"></script>
 </head>
@@ -69,22 +70,23 @@
 
     <section class="text-gray-700 body-font">
         <div class="container px-5 py-12 mx-auto flex flex-wrap">
-        <div class="flex flex-col text-center w-full mb-0">
-            <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">Una vivienda unifamiliar con todo el confort</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 titles">CASA EN NÁUTICO ESCOBAR COUNTRY CLUB</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">Casas 4 ambientes, con jardín, cochera y amplios espacios para compartir con familiares y amigos, con pequeñas calles residenciales y áreas de uso común como canchas deportivas, pileta y parque infantil.</p>
-
-        </div>
-                    <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 slideshow-container">
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op1.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op2.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op3.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op4.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op5.webp"></div>
-                
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <div class="flex flex-col text-center w-full mb-0">
+                <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">Una vivienda unifamiliar con todo el confort</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 titles">CASA EN NÁUTICO ESCOBAR COUNTRY CLUB</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">Casas 4 ambientes, con jardín, cochera y amplios espacios para compartir con familiares y amigos, con pequeñas calles residenciales y áreas de uso común como canchas deportivas, pileta y parque infantil.</p>
+            </div>
+            <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 slideshow-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op1.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op2.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op3.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op4.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/op/op5.webp"></div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>    
+            </div>
                 <div class="flex flex-col flex-wrap lg:py-2 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                     <div class="flex flex-row mb-6 lg:items-start items-center">
                         <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
@@ -218,6 +220,7 @@
     </div>
 </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
     
 
