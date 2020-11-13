@@ -19,12 +19,8 @@ html{
 .under{
     text-decoration: underline solid #F6E05E;
 }
-.titles{
-    font-family: 'Montserrat', arial;
-    color: var(--pri);
-}
-.stat-titles{
-    font-size: 15px;
+.stat-titles, .titles{
+    font-size: 30px;
     line-height: 28px;
     font-family: 'Montserrat', arial;
     font-weight: 800;

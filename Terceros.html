@@ -31,6 +31,8 @@
         <!-- -----CSS----- -->
 <link rel="stylesheet" href="styletb.css">
 <link rel="stylesheet" href="tailwind.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
         <!-- -----FONTS----- -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- -----FONTAWESOME KIT----- -->
@@ -75,57 +77,58 @@
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-5">Cuenta con 82 departamentos: monoambientes, 2 y 3 ambientes, más cochera.</p>
 
         </div>
-                    <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg slideshow-container">
-
-                    <div class="mySlides1"><img style="cursor: zoom-in" alt="feature" class="absloute myImage object-cover object-center h-full w-full" loading="lazy" src="./assets/terceros/imperio01.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio02.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio03.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio04.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio05.webp"></div>
-                    <div class="mySlides1"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio06.webp"></div>
-
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg swiper-container slideshow-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img style="cursor: zoom-in" alt="feature" class="absloute myImage object-cover object-center h-full w-full" loading="lazy" src="./assets/terceros/imperio01.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio02.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio03.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio04.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio05.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/imperio06.webp"></div>
                 </div>
-                <div class="flex flex-col flex-wrap lg:py-2 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-                    <div class="flex flex-row mb-6 lg:items-start items-center">
-                        <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
-                            <img src="https://img.icons8.com/bubbles/150/000000/building.png"/>
-                        </div>
-                        <div class="w-5/6 flex-grow text-left pt-4">
-                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Espacio para todas las personas</h2>
-                            <p class="leading-relaxed text-base"> 520 unidades funcionales completamente equipadas.</p>
-                        </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>    
+            </div>
+            <div class="flex flex-col flex-wrap lg:py-2 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                <div class="flex flex-row mb-6 lg:items-start items-center">
+                    <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
+                        <img src="https://img.icons8.com/bubbles/150/000000/building.png"/>
                     </div>
-                    <div class="flex flex-row mb-6 lg:items-start items-center">
-                        <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
-                            <img src="https://img.icons8.com/bubbles/150/000000/map-marker.png"/>
-                        </div>
-                        <div class="w-5/6 flex-grow text-left pt-2">
-                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">A medida de sus necesidades</h2>
-                            <p class="leading-relaxed text-base">Departamentos de 1 y 2 ambientes ubicados de manera inmejorable.</p>
-                        </div>
+                    <div class="w-5/6 flex-grow text-left pt-4">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Espacio para todas las personas</h2>
+                        <p class="leading-relaxed text-base"> 520 unidades funcionales completamente equipadas.</p>
                     </div>
-                    <div class="flex flex-row mb-6 lg:items-start items-center">
-                        <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
-                            <img src="https://img.icons8.com/bubbles/150/000000/traffic-jam.png"/>
-                        </div>
-                        <div class="w-5/6 flex-grow text-left pt-2">
-                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">No nos olvidamos de los autos</h2>
-                            <p class="leading-relaxed text-base">El edificio cuenta con cocheras para que ningún auto deba ser arriesgado al estacionarlo en la calle.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row mb-6 lg:items-start items-center">
-                        <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
-                            <img src="https://img.icons8.com/bubbles/100/000000/dog.png"/>
-                        </div>
-                        <div class="w-5/6 flex-grow text-left pt-2">
-                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Con lugar para animales</h2>
-                            <p class="leading-relaxed text-base">Sabemos lo importantes que son las mascotas. El edificio las acepta y cuenta con un área común para su diversión.</p>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="flex flex-row mb-6 lg:items-start items-center">
+                    <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
+                        <img src="https://img.icons8.com/bubbles/150/000000/map-marker.png"/>
+                    </div>
+                    <div class="w-5/6 flex-grow text-left pt-2">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">A medida de sus necesidades</h2>
+                        <p class="leading-relaxed text-base">Departamentos de 1 y 2 ambientes ubicados de manera inmejorable.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mb-6 lg:items-start items-center">
+                    <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
+                        <img src="https://img.icons8.com/bubbles/150/000000/traffic-jam.png"/>
+                    </div>
+                    <div class="w-5/6 flex-grow text-left pt-2">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">No nos olvidamos de los autos</h2>
+                        <p class="leading-relaxed text-base">El edificio cuenta con cocheras para que ningún auto deba ser arriesgado al estacionarlo en la calle.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mb-6 lg:items-start items-center">
+                    <div class="w-1/6 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-2">
+                        <img src="https://img.icons8.com/bubbles/100/000000/dog.png"/>
+                    </div>
+                    <div class="w-5/6 flex-grow text-left pt-2">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Con lugar para animales</h2>
+                        <p class="leading-relaxed text-base">Sabemos lo importantes que son las mascotas. El edificio las acepta y cuenta con un área común para su diversión.</p>
+                    </div>
+                </div>
+
+            </div>
             </div>
     </section>
 <!-- -----CONTENIDO EDIFICIO 2----- -->
@@ -174,27 +177,28 @@
                         </div>
                     </div>
             </div>
-                <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 lg:mt-10 slideshow-container">
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez1.webp"></div>
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez2.webp"></div>
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez3.webp"></div>
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez4.webp"></div>
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez5.webp"></div>
-                <div class="mySlides2"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez6.webp"></div>
-
-            
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            <div class="relative lg:w-1/2 w-full mb-10 lg:mb-0 lg:mt-10 swiper-container1 slideshow-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez1.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez2.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez3.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez4.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez5.webp"></div>
+                    <div class="swiper-slide"><img alt="feature" class="absloute object-cover object-center h-full w-full fade" loading="lazy" src="./assets/terceros/nunez6.webp"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>    
             </div>
         </div>
     </section>
 
 <!-- -----FOOTER----- -->
-    <footer class="text-gray-700 body-font mb-10">
+<footer class="text-gray-700 body-font mb-10">
     <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-48 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left mb-5" >
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
-            <img class="logo" src="./logo.png" alt="logo" style="height: 40px;">
+            <img class="logo" src="./assets/logo-verti.png" alt="logo" style="max-height: 220px;">
         </a>
         <p class="mt-2 text-sm text-gray-900">Concretamos sueños, <br> <span class="highlights"> edificamos hogares</span></p>
     </div>
@@ -205,13 +209,13 @@
         <nav class="list-none mb-2">
             <ul>
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Teléfonos</h2>
-            <li><a class="phone" href="tel:11-4664-7666" class="text-gray-700 hover:text-gray-800"><i class="fa fa-phone"></i> (5411) 4664-7666</a></li>
-            <li><a class="phone" href="tel:11-4664-4426" class="text-gray-700 hover:text-gray-800"><i class="fa fa-phone"></i> (5411) 4664-4426</a></li>
-            <li><a class="phone" href="tel:11-5292-3585" class="text-gray-700 hover:text-gray-800"><i class="fa fa-phone"></i> (5411) 5292-3585</a></li>
+            <li class="text-gray-700 hover:text-gray-800"><i class="fa fa-phone"> (5411) 4664-7666</i></li>
+            <li class="text-gray-700 hover:text-gray-800"><i class="fa fa-phone"> (5411) 4664-4426</i></li>
+            <li class="text-gray-700 hover:text-gray-800 mb-1"><i class="fa fa-phone"> (5411) 5292-3585</i></li>
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Horario de atención</h2>
-            <li class="text-gray-700 hover:text-gray-800 mb-1"><i class="fa fa-clock"></i> Lun - Vie: 9:00 - 18:00</li>
+            <li class="text-gray-700 hover:text-gray-800 mb-1"><i class="fa fa-clock"> Lun - Vie: 9:00 - 18:00</i></li>
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Dirección</h2>
-            <li class="text-gray-700 hover:text-gray-800 mb-1"><i class="fa fa-map-marker-alt"></i> Azcuénaga 945, Muñiz, Buenos Aires</li>
+            <li class="text-gray-700 hover:text-gray-800 mb-1"><i class="fa fa-map-marker-alt"> Azcuénaga 945, Muñiz, Buenos Aires</i></li>
         </ul>
         </nav>
         </div>
@@ -220,11 +224,11 @@
         <nav class="list-none mb-2">
             <ul>
                 <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Ventas</h2>
-                <li><a href="mailto:ventas@isaconstructora.com" class="text-gray-600 hover:text-gray-800 sm:text-center md:text-left mb-1 tracking-tighter">ventas@isaconstructora.com</a></li>
+                <li class="text-orange-600 hover:text-orange-800 sm:text-center md:text-left mb-1 tracking-tighter">ventas@isaconstructora.com</li>
                 <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Proveedores</h2>
-                <li><a href="mailto:proveedores@isaconstructora.com" class="text-gray-600 hover:text-gray-800 sm:text-center md:text-left mb-1 tracking-tighter">proveedores@isaconstructora.com</a></li>
+                <li class="text-orange-600 hover:text-orange-800 sm:text-center mb-1 md:text-left tracking-tighter">proveedores@isaconstructora.com</li> 
                 <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">Dejanos tu Cv</h2>
-                <li><a href="mailto:rrhh@isaconstructora.com" class="text-gray-600 hover:text-gray-800 sm:text-center md:text-left mb-1 tracking-tighter">rrhh@isaconstructora.com</a></li>
+                <li class="text-orange-600 hover:text-orange-800 sm:text-center mb-1 md:text-left tracking-tighter">rrhh@isaconstructora.com</li>
             </ul>
         </nav>
         </div>
@@ -235,7 +239,6 @@
                     <li><a href="./Edificios.html" class="text-gray-600 hover:text-gray-800">Edificios</a></li>
                     <li><a href="./Condominios.html" class="text-gray-600 hover:text-gray-800">Condominios</a></li>
                     <li><a href="./Hoteles.html" class="text-gray-600 hover:text-gray-800">Hotelería</a> </li>
-                    <li><a href="./Terceros.html" class="text-gray-600 hover:text-gray-800">Edificios para terceros</a></li>
                     <li><a href="./op.html" class="text-gray-600 hover:text-gray-800">Obras particulares</a></li>
                     <li><a href="./obra.html" class="text-gray-600 hover:text-gray-800">En obra</a></li>
                 </ul>
@@ -246,37 +249,30 @@
             <nav class="list-none mb-10">
                 <ul>
                     <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Edificio Torino II</a></li>
-                    <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Barrio cerrado Cumelén</a></li>
-                    <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Altos de la Bahía Manzano</a> </li>
-                    <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Oficinas ISA</a></li>  
+                    <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Terrazas de Manzano</a> </li>
+                    <li><a href="./proyectos-expand.html" class="text-gray-600 hover:text-gray-800">Edificios ISA</a></li>  
                 </ul>
             </nav>
         </div> 
-</div>
+        </div>
     </div>
-    <!--<div class="bg-gray-200">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 for dev purposes —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"> By Luciano</a>
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Todos los derechos reservados —
+        <a href="https://rozzidigital.com" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Creado por Rozzi Digital</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <a class="ml-3 text-gray-500 hover:text-blue-800" href="https://www.facebook.com/ISACONST/" rel="noopener noreferrer">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
         </a>
-        <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-500 hover:text-pink-800" href="https://www.instagram.com/isaconstructora/" rel="noopener noreferrer">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-500 hover:text-blue-800" href="https://www.linkedin.com/company/isaconstructora/" rel="noopener noreferrer">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
             <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
@@ -284,9 +280,9 @@
         </a>
         </span>
     </div>
-    </div>-->
-    </footer>
+</footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 
 </body>
